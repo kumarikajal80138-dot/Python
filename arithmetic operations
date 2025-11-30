@@ -1,0 +1,43 @@
+# arithmetic.py
+# Basic Arithmetic Operations in Python
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero!"
+    return a / b
+
+def modulus(a, b):
+    if b == 0:
+        return "Error: Modulus by zero!"
+    return a % b
+
+def exponent(a, b):
+    return a ** b
+
+def floor_division(a, b):
+    if b == 0:
+        return "Error: Floor division by zero!"
+    return a // b
+
+
+# Example usage
+if __name__ == "__main__":
+    x = 15
+    y = 4
+
+    print("Addition:", add(x, y))
+    print("Subtraction:", subtract(x, y))
+    print("Multiplication:", multiply(x, y))
+    print("Division:", divide(x, y))
+    print("Modulus:", modulus(x, y))
+    print("Exponent:", exponent(x, y))
+    print("Floor Division:", floor_division(x, y))
